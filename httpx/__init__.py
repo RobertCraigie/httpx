@@ -41,7 +41,19 @@ from ._transports.base import AsyncBaseTransport, BaseTransport
 from ._transports.default import AsyncHTTPTransport, HTTPTransport
 from ._transports.mock import MockTransport
 from ._transports.wsgi import WSGITransport
-from ._types import AsyncByteStream, SyncByteStream
+from ._types import (
+    AsyncByteStream,
+    SyncByteStream,
+    AuthTypes,
+    QueryParamTypes,
+    HeaderTypes,
+    CookieTypes,
+    CertTypes,
+    VerifyTypes,
+    ProxiesTypes,
+    TimeoutTypes,
+    URLTypes,
+)
 
 try:
     from ._main import main
@@ -127,6 +139,15 @@ __all__ = [
     "WriteError",
     "WriteTimeout",
     "WSGITransport",
+    "AuthTypes",
+    "QueryParamTypes",
+    "HeaderTypes",
+    "CookieTypes",
+    "CertTypes",
+    "VerifyTypes",
+    "ProxiesTypes",
+    "TimeoutTypes",
+    "URLTypes",
 ]
 
 
